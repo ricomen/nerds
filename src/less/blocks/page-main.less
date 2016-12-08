@@ -1,0 +1,34 @@
+.features {
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    width: 240px;
+    &-title {
+      font-size: 18px;
+      line-height: 30px; 
+      text-transform: uppercase;     
+    }    
+  }
+  &__text {
+      font-size: 15px;
+      line-height: 22px;
+    }
+}
+.custom-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &__item {
+    position: relative;
+    padding-left: 35px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      content: "";
+      width: 25px;
+      height: 2px;
+      background-color: #fb565a;
+    }
+  }
+}
