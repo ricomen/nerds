@@ -1,7 +1,9 @@
 .features {
-  margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+  border-bottom: 2px solid #eee;
   &__item {
     width: 240px;
     &-title {
@@ -112,6 +114,46 @@
 
 }
 .contact {
-  position: absolute;  
+  position: absolute; 
+  width: 210px;
+  left: 0;
+  top: 90px;  
+  padding: 30px 20px;
+  background-color: #fff;
   z-index: 10;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px #000;
+  transition: box-shadow 0.5s;
+  &:hover {
+    box-shadow: 0 20px 50px #000;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    }
+  &__adress {
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: #666;
+    margin-bottom: 15px;
+    }
+  &__phone-number {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 20px;
+    }
+  &__link {
+    text-align: center;
+    display: block; 
+    font-weight: 500;
+    }
+
 }

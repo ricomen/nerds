@@ -105,6 +105,12 @@
   outline: none;
   background-color: #fb565a;
 }
+.btn:hover {
+  background-color: #d6494d;
+}
+.btn:active {
+  box-shadow: inset 0 2px 2px #000;
+}
 .btn--big {
   padding-right: 70px;
   padding-left: 70px;
@@ -112,11 +118,29 @@
 .btn--red {
   background-color: #fb565a;
 }
+.btn--red:hover {
+  background-color: #d6494d;
+}
+.btn--red:active {
+  background-color: #b63538;
+}
 .btn--green {
   background-color: #00ca74;
 }
+.btn--green:hover {
+  background-color: #01a25e;
+}
+.btn--green:active {
+  background-color: #009053;
+}
 .btn--yellow {
   background-color: #efc84a;
+}
+.btn--yellow:hover {
+  background-color: #d6ae2c;
+}
+.btn--yellow:active {
+  background-color: #c09b24;
 }
 body {
   font-family: "Roboto", "Arial", sans-serif;
@@ -127,6 +151,8 @@ body {
   padding: 0;
 }
 .container {
+  position: relative;
+
   width: 880px;
   margin: 0 auto;
   padding: 0 10px;
@@ -141,10 +167,12 @@ body {
   display: -ms-flexbox;
   display: flex;
 
+  min-height: 80px;
+
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .slider {
   position: relative;
@@ -336,7 +364,10 @@ body {
   display: -ms-flexbox;
   display: flex;
 
-  margin-bottom: 80px;
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  border-bottom: 2px solid #eee;
 
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -465,4 +496,95 @@ body {
 .contact {
   position: absolute;
   z-index: 10;
+  top: 90px;
+  left: 0;
+
+  width: 210px;
+  padding: 30px 20px;
+
+  transition: box-shadow .5s;
+
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px #000;
+}
+.contact:hover {
+  box-shadow: 0 20px 50px #000;
+}
+.contact__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+
+  margin: 0;
+  margin-bottom: 15px;
+
+  text-transform: uppercase;
+}
+.contact__adress {
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+
+  margin-bottom: 15px;
+
+  color: #666;
+}
+.contact__phone-number {
+  font-size: 16px;
+  line-height: 20px;
+
+  display: block;
+
+  margin-bottom: 20px;
+
+  text-decoration: none;
+
+  color: #666;
+}
+.contact__link {
+  font-weight: 500;
+
+  display: block;
+
+  text-align: center;
+}
+.page-footer {
+  display: -ms-flexbox;
+  display: flex;
+
+  padding-bottom: 75px;
+}
+.social {
+  display: -ms-flexbox;
+  display: flex;
+
+  min-width: 240px;
+  margin-right: 80px;
+
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.social__btn {
+  font-size: 0;
+
+  width: 63px;
+  height: 63px;
+
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+.special-offers__slogan {
+  font-size: 36px;
+  font-weight: 500 ;
+  line-height: 40px;
+
+  margin: 0;
+}
+.special-offers__discount {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+
+  margin: 0;
 }
