@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=960"> 
     <title>Nerd's</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,500,500i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,00i,500,500i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,22 +32,22 @@
       </div> <!-- page-header__top end -->
 
       <div class="slider">
-
-          <!-- <input id="btn-1" type="radio" name="toggle" checked="checked">
-          <input id="btn-2" type="radio" name="toggle">
-          <input id="btn-3" type="radio" name="toggle"> -->
-
-        <div class="slider__controls">
-          <label for="btn-1"></label>
-          <label for="btn-2"></label>
-          <label for="btn-3"></label>
-        </div> <!-- slider__controls end -->
-        <div class="slides">
-          
+    <div class="slider-controls">
+      <i class="active"></i>
+      <i class=""></i>
+      <i class=""></i>
+    </div> <!-- slider-controls -->
+    <div class="slides">
+      <div class="slide">
+        <div class="slide-text">
+          <div class="slide-title">Долго, дорого, скурпулезно</div>
+            <p>Математичсески выверенный дизайн<br>для вашего сайта или мобильного приложения</p>
+            <a href="#" class="btn">Узнать Больше</a>
+         
         </div>
-        
-
-      </div> <!-- slider end -->
+      </div>
+    </div>
+  </div> <!-- slider -->
 
     </div> <!-- container end -->
    </header>
@@ -89,41 +89,118 @@
       </div> <!-- features -->
 
       <div class="about">
-        
-      <b>Мы — маленькая, но гордая
-      дизайн-студия из Краснодара. </b>
-Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.
-      <img src="" alt="" class="about__logo">
+        <div class="about__content">
+
+          <div class="about__left-column">
+
+            <p class="about__promo-text"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+
+          </div> <!-- left-column -->
+
+          <div class="about__right-column">
+
+            <div class="about__logo">
+              <img src="../img/about-logo.png" width="187" height="75" alt="Nerd`s" class="about__logo-image">
+            </div>
+            <p class="about__logo-text">Since 2004</p>
+
+          </div>
+
+      </div> 
+      
+      <div class="about__content">
+        <div class="about__left-column">
+      
+        <h2 class="about__title">Выполняем заказы на разработку:</h2>
+        <ul class="custom-list">
+          <li class="custom-list__item">Веб-сайтов любой сложности</li>
+          <li class="custom-list__item">Мобильных приложений для iOS и Android</li>
+          <li class="custom-list__item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+        </div>
+          
+      
+        <div class="about__right-column">
+        <h2 class="about__title">Как мы работаем:</h2>
+        <ul class="custom-list">
+          <li class="custom-list__item">С самоотдачей 146%</li>
+          <li class="custom-list__item">Соблюдая сроки на 100%</li>
+          <li class="custom-list__item">По предоплате 50%</li>
+        </ul> 
+        </div>
+       </div> 
 
       </div> <!-- about --> 
 
 
-Выполняем заказы на разработку:
-<ul class="custom-list">
-  <li class="custom-list__item">Веб-сайтов любой сложности</li>
-  <li class="custom-list__item">Мобильных приложений для iOS и Android</li>
-  <li class="custom-list__item">Слайдшоу и видео для корпоративных презентаций</li>
-</ul>
-  
+  <div class="projects">
+    <div class="projects__item">
+      <a href="#" class="projects__link">
+        <img src="img/gluhanko-logo.png" alt="Glukhanko">
+        </a>
+    </div>
+    <div class="projects__item">
+      <a href="#" class="projects__link">
+        <img src="img/html-academy-logo.png" alt="HTML Academy">
+        </a>
+    </div>
+    <div class="projects__item">
+      <a href="#" class="projects__link">
+        <img src="img/barbershop-logo.png" alt="Барбершоп «Бородинский»">
+        </a>
+    </div>
+  </div>
 
-  Как мы работаем:
-  <ul class="custom-list">
-    <li class="custom-list__item">С самоотдачей 146%</li>
-    <li class="custom-list__item">Соблюдая сроки на 100%</li>
-    <li class="custom-list__item">По предоплате 50%</li>
-  </ul>
+  </main>
 
+  <div class="map" id="map">
+    <div class="container">
+      <div class="contact">
+        <a href="#" class="btn contact__link">Напишите нам</a>
+      </div>
+    </div>
 
+  </div>
 
-  
 
  
     
-  </main>
 
 
-  <footer class="page-footer">
-    
+  <footer class="page-footer container">
+
+    <section class="social">
+      <a href="http://www.vk.com" class="social__link">Вконтакте</a>
+      <a href="http://www.facebook.com" class="social__link">Фэйсбук</a>
+      <a href="http://www.instagram.com" class="social__link">Инстраграм</a>
+    </section>
+ 
   </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;  
+ 
+      function init(){     
+        myMap = new ymaps.Map("map", {
+             center: [59.938527, 30.315737],
+             controls: [],
+             zoom: 15,
+
+        });
+
+        myMap.behaviors.disable('scrollZoom');            
+
+        myPlacemark = new ymaps.Placemark([59.938592, 30.323000], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: "/img/myPlacemark.png",
+          iconImageSize: [231, 190],
+          iconImageOffset: [-50, -190]
+        });            
+        myMap.geoObjects.add(myPlacemark);
+        }
+  </script>
 </body>
 </html>
