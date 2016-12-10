@@ -191,7 +191,27 @@
     </section>
  
   </footer>
-
+</div> <!-- container -->
+  <div class="modal-content">
+    <button class="modal-content__close">Закрыть</button>
+    
+      <form class="contact-form" action="" method="POST">
+        
+        <div class="contact-form__layout  contact-form__layout--left-column">
+          <label for="name">Ваше имя:</label>
+          <input class="contact-form__name" id="name" name="userName" type="text" placeholder="Представьтесь, пожалуйста">
+        </div>
+        
+        <div class="contact-form__layout  contact-form__layout--right-column">
+          <label for="email">Ваш e-mail:</label>
+          <input class="contact-form__email" id="email" name="email" type="text" placeholder="Для отправки ответа">
+        </div>                
+          
+        <label for="textarea">Текст письма:</label>
+        <textarea class="contact-form__textarea" placeholder="В свободной форме"></textarea><br>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+  </div> <!-- modal-content -->
 
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script>
@@ -218,5 +238,6 @@
         myMap.geoObjects.add(myPlacemark);
         }
   </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
