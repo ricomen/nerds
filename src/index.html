@@ -103,22 +103,22 @@
       </div> <!-- features -->
 
       <div class="about">
+
         <div class="about__content">
 
           <div class="about__left-column">
 
-            <p class="about__promo-text"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+            <p class="about__promo-text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 
           </div> <!-- left-column -->
 
-          <div class="about__right-column">
+          <div class="about__right-column about__right-column--center">
 
             <div class="about__logo">
               <img src="img/about-logo.png" width="187" height="75" alt="Nerd`s" class="about__logo-image">
             </div>
-            <p class="about__logo-text">Since 2004</p>
-
+            <h3 class="about__logo-text">Since 2004</h3>
           </div>
 
       </div> 
@@ -132,8 +132,7 @@
           <li class="custom-list__item">Мобильных приложений для iOS и Android</li>
           <li class="custom-list__item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-        </div>
-          
+        </div>          
       
         <div class="about__right-column">
         <h2 class="about__title">Как мы работаем:</h2>
@@ -144,10 +143,7 @@
         </ul> 
         </div>
        </div> 
-
       </div> <!-- about --> 
-
-
   <div class="projects">
     <div class="projects__item">
       <a href="#" class="projects__link">
@@ -165,9 +161,7 @@
         </a>
     </div>
   </div>
-
   </main>
-
   <div class="map" id="map">
     <div class="container">
       <div class="contact">
@@ -176,56 +170,42 @@
       ул. Б. Конюшенная, д. 19/8
       тел.</address>
       <a href="tel:+78122757575" class="contact__phone-number">+7 (812) 275-75-75</a>
-       
-
-
-        <a href="mailto:ricomen@mail.ru" class="btn contact__link">Напишите нам</a>
+      <a href="mailto:ricomen@mail.ru" class="btn contact__link">Напишите нам</a>
       </div>
     </div>
-
   </div>
-
-
- 
-    
-
-
   <footer class="page-footer container">
-
     <section class="social">
       <a href="http://www.vk.com" class="social__btn"><i class="icon-vk"></i></a>
       <a href="http://www.facebook.com" class="social__btn"><i class="icon-facebook"></i></a>
       <a href="http://www.instagram.com" class="social__btn"><i class="icon-instagramm"></i></a>
     </section>
-
     <section class="special-offers">
       <p class="special-offers__slogan">Давайте дружить, это выгодно</p>
       <p class="special-offers__discount">Cкидка 10% для друзей из социальных сетей</p>
-    </section>
- 
+    </section> 
   </footer>
 </div> <!-- container -->
-  <div class="modal-content">
-    <button class="modal-content__close">Закрыть</button>
-    
-      <form class="contact-form" action="" method="POST">
+<div class="modal-content">
+  <button class="modal-content__close">Закрыть</button>
+  
+    <form class="contact-form" action="" method="POST">
+      
+      <div class="contact-form__layout  contact-form__layout--left-column">
+        <label for="name">Ваше имя:</label>
+        <input class="contact-form__name" id="name" name="userName" type="text" placeholder="Представьтесь, пожалуйста">
+      </div>
+      
+      <div class="contact-form__layout  contact-form__layout--right-column">
+        <label for="email">Ваш e-mail:</label>
+        <input class="contact-form__email" id="email" name="email" type="text" placeholder="Для отправки ответа">
+      </div>                
         
-        <div class="contact-form__layout  contact-form__layout--left-column">
-          <label for="name">Ваше имя:</label>
-          <input class="contact-form__name" id="name" name="userName" type="text" placeholder="Представьтесь, пожалуйста">
-        </div>
-        
-        <div class="contact-form__layout  contact-form__layout--right-column">
-          <label for="email">Ваш e-mail:</label>
-          <input class="contact-form__email" id="email" name="email" type="text" placeholder="Для отправки ответа">
-        </div>                
-          
-        <label for="textarea">Текст письма:</label>
-        <textarea class="contact-form__textarea" placeholder="В свободной форме"></textarea><br>
-        <button class="btn" type="submit">Отправить</button>
-      </form>
-  </div> <!-- modal-content -->
-
+      <label for="textarea">Текст письма:</label>
+      <textarea class="contact-form__textarea" placeholder="В свободной форме"></textarea><br>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+</div> <!-- modal-content -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script>
     ymaps.ready(init);

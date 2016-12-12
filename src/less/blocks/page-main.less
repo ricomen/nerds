@@ -25,42 +25,39 @@
   &__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   &__left-column {
     width: 620px;    
   }
   &__right-column {
     width: 240px;
+    &--center {
+      text-align: center;
+    }   
   }
   &__promo-text {
-    b {
     font-size: 36px;
-    line-height: 40px;      
-    }
+    line-height: 1.1;
+    font-weight: 500;  
   }
+  &__title {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+  }      
   &__logo {
-    text-align: center;
     margin-bottom: 28px;
     &-text {
+      display: block;   
       position: relative;
-      z-index: 2;
-      text-align: center;
+      z-index: 10;      
       margin: 0;
       font-size: 16px;
       line-height: 20px;
       text-transform: uppercase;
       font-weight: 500;
-      background-color: #fff;
-      &::after {
-        content: "";
-        position: relative;
-        top: -11px;
-        z-index: 1;
-        
-        display: block;  
-        border-bottom: 2px solid #eee;     
-
-      }
+      background: #fff;
     }
   }
 }
