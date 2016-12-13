@@ -1,0 +1,132 @@
+.form-filter {  
+  fieldset {
+    border: none;
+    outline: none;
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+  }
+  legend {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;    
+  }
+  &__range {
+    width: 240px; 
+      input {
+      width: 60px;
+      padding: 8px 10px;
+      margin-left: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      font-family: "Roboto", "Arial", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      text-align: center;
+      color: #283136;
+      background-color: #f1f1f1;
+    }   
+  }
+  &__controls {
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  &__scale {
+    margin-top: 39px;
+    height: 2px;
+    background-color: #d7dcde;
+  }
+  &__bar {
+    height: 2px;
+    background-color: #00ca74;
+  }
+  &__toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #fff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 2px #cfcfcf;
+    &--max {
+      left: 145px;  
+    } 
+  }
+  
+    label {
+    cursor: pointer;
+    display: block;    
+    font-size: 16px;
+    line-height: 28px;
+    position: relative;    
+    padding-left: 35px;
+    margin-bottom: 20px; 
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    &::before {
+        position: absolute;      
+        font-family: "symbols-nerds";
+        color: #c1c1c1;
+        font-size: 28px;
+        line-height: 1;
+        bottom: 0px;
+        left: 0;
+        width: 25px;
+        height: 25px; 
+    }
+    &:hover::before {
+      color: #b5b5b5;
+    }  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+  input[type="radio"]:checked + label {
+     &::before{
+      content: "\25cf";
+    }
+  }
+  input[type="checkbox"]:checked + label {
+     &::before{
+      content: "\2611";
+    }
+  }    
+  input[type="radio"] + label {
+    &::before{
+      content: "\25cb";        
+    }  
+  }
+  input[type="checkbox"] + label {
+    &::before{       
+      content: "\2610";      
+    }                 
+  }
+  input[type="radio"]:disabled + label,
+  input[type="checkbox"]:disabled + label,
+  input[type="radio"]:disabled + label::before,
+  input[type="checkbox"]:disabled + label::before {     
+      cursor: default;
+      color: #e9e9e9;
+    }  
+  }
+  
+
+  
+  
+

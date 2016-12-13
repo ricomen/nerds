@@ -36,30 +36,56 @@
 
   <main class="container">
   <aside class="sidebar">
-     <form calss="form-filter" action="/" method="GET">
+     <form class="form-filter" action="/" method="GET">
+
        <fieldset>
-         <legend>Стоимость:</legend>
-         <div></div>
-         <input type="text">
-         <input type="text">
+
+        <legend class="form-filter__title">Стоимость:</legend>
+
+        <div class="form-filter__range">
+          <div class="form-filter__controls">
+            <div class="form-filter__scale">
+              <div class="form-filter__bar" style="width: 70%;"></div> 
+              <div class="form-filter__toggle  form-filter__toggle--min"></div>    
+              <div class="form-filter__toggle  form-filter__toggle--max"></div>    
+            </div>
+          </div>
+         <div class="form-filter__price">
+         От<input class="form-filter__price-min" type="text" value="0">До<input class="form-filter__price-max"  type="text" value="15000">
+         </div>
+        </div>
+
        </fieldset>
 
        <fieldset>
-         <legend>Сетка:</legend>   
-         <input id="adaptive" type="radio" name="tepe-of-grid"><span></span><label for="adaptive">Адаптивная</label><br>
-         <input id="fixed" type="radio" name="tepe-of-grid"><span></span><label for="fixed">Фиксированная</label><br>
-         <input id="flexible" type="radio" name="tepe-of-grid"><span></span><label for="flexible">Резиновая</label><br>
+         <legend class="form-filter__title">Сетка:</legend>   
+
+         <input type="radio" id="adaptive" name="type-of-grid" disabled><label class="form-filter__radio" for="adaptive">Адаптивная</label>
+         <input type="radio" id="fixed"    name="type-of-grid"><label class="form-filter__radio" for="fixed">Фиксированная</label>
+         <input type="radio" id="flexible" name="type-of-grid"><label class="form-filter__radio" for="flexible">Резиновая</label>
        </fieldset>
 
        <fieldset>
-         <legend>Особенности: </legend>         
-         <input type="checkbox">
-         <input type="checkbox">
-         <input type="checkbox">
+         <legend class="form-filter__title">Особенности:</legend>         
+         <input type="checkbox" id="filter-slider" name="have-slider"><label for="filter-slider">Слайдер</label>
+         <input type="checkbox" id="filter-features" name="have-features"><label for="filter-features">Блок преимуществ</label>
+         <input type="checkbox" id="filter-news" name="have-news"><label for="filter-news">Новости</label>
+         <input type="checkbox" id="filter-gallery" name="have-gallery"><label for="filter-gallery">Галлерея</label>
+         <input type="checkbox" id="filter-cart" name="have-cart"><label for="filter-cart">Корзина</label>
        </fieldset>
       <button class="btn" type="submit">Показать</button>
      </form>
   </aside>
+  <div class="content">
+    <div class="catalog">
+      
+    </div>
+    <div class="paginator">
+      
+    </div>
+  </div>
+  <div class="border-yellow"></div>
+
   </main>
   <div class="map" id="map">
     <div class="container">
