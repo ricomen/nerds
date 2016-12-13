@@ -398,6 +398,9 @@ body {
   line-height: 22px;
 }
 .about__logo {
+  text-align: center;
+}
+.about__logo-image {
   margin-bottom: 28px;
 }
 .about__logo-text {
@@ -406,15 +409,30 @@ body {
   line-height: 20px;
 
   position: relative;
-  z-index: 10;
+  z-index: 2;
 
-  display: block;
+  display: inline;
 
   margin: 0;
 
+  text-align: center;
   text-transform: uppercase;
 
   background: #fff;
+}
+.about__logo-text::before {
+  position: relative;
+  z-index: 1;
+  top: 12px;
+  left: 0;
+
+  display: block;
+
+  height: 2px;
+
+  content: "";
+
+  border-bottom: 2px solid #eee;
 }
 .custom-list {
   margin: 0;
@@ -525,6 +543,9 @@ body {
   display: block;
 
   text-align: center;
+}
+.sidebar {
+  width: 240px;
 }
 .page-footer {
   display: -ms-flexbox;

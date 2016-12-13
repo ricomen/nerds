@@ -46,18 +46,32 @@
     line-height: 22px;
     font-weight: 500;
   }      
-  &__logo {
+&__logo {
+    text-align: center;
+    &-image {
     margin-bottom: 28px;
+    }
     &-text {
-      display: block;   
       position: relative;
-      z-index: 10;      
+      display: inline;      
+      z-index: 2;
+      text-align: center;
       margin: 0;
       font-size: 16px;
       line-height: 20px;
       text-transform: uppercase;
       font-weight: 500;
-      background: #fff;
+      background: #fff;      
+       &::before {    
+        content: "";
+        position: relative;
+        display: block;  
+        top: 12px;
+        left: 0;
+        z-index: 1;   
+        height: 2px;
+        border-bottom: 2px solid #eee;              
+      }      
     }
   }
 }
@@ -150,5 +164,8 @@
     display: block; 
     font-weight: 500;
     }
+}
 
+.sidebar {
+  width: 240px;
 }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=960"> 
+    <title>Nerd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,00i,500,500i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo.png" alt="Nerd's" width="139" height="56" class="logo__img">
+          </a>        
+        </div> <!-- logo end -->
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link  main-nav__link--current">Студия</a>
+            </li>
+             <li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
+             <li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
+             <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav> <!-- nav end -->
+        <div class="cart">          
+          <a href="#" class="cart__link cart__link--current"><span class="icon-basket"></span> Корзина</a>
+        </div> <!-- cart end -->
+      </div> <!-- page-header__top end -->
+      <div class="catalog-title">Добро пожаловать в магазин готовых макетов</div>
+    </div> <!-- container end -->
+   </header>
+
+  <main class="container">
+  <aside class="sidebar">
+     <form calss="form-filter" action="/" method="GET">
+       <fieldset>
+         <legend>Стоимость:</legend>
+         <div></div>
+         <input type="text">
+         <input type="text">
+       </fieldset>
+
+       <fieldset>
+         <legend>Сетка:</legend>   
+         <input id="adaptive" type="radio" name="tepe-of-grid"><span></span><label for="adaptive">Адаптивная</label><br>
+         <input id="fixed" type="radio" name="tepe-of-grid"><span></span><label for="fixed">Фиксированная</label><br>
+         <input id="flexible" type="radio" name="tepe-of-grid"><span></span><label for="flexible">Резиновая</label><br>
+       </fieldset>
+
+       <fieldset>
+         <legend>Особенности: </legend>         
+         <input type="checkbox">
+         <input type="checkbox">
+         <input type="checkbox">
+       </fieldset>
+      <button class="btn" type="submit">Показать</button>
+     </form>
+  </aside>
+  </main>
+  <div class="map" id="map">
+    <div class="container">
+      <div class="contact">
+      <h2 class="contact__title">NЁRDS DESIGN STUDIO</h2>
+      <address class="contact__adress">191186, Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8
+      тел.</address>
+      <a href="tel:+78122757575" class="contact__phone-number">+7 (812) 275-75-75</a>
+      <a href="mailto:ricomen@mail.ru" class="btn contact__link">Напишите нам</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer container">
+    <section class="social">
+      <a href="http://www.vk.com" class="social__btn"><i class="icon-vk"></i></a>
+      <a href="http://www.facebook.com" class="social__btn"><i class="icon-facebook"></i></a>
+      <a href="http://www.instagram.com" class="social__btn"><i class="icon-instagramm"></i></a>
+    </section>
+    <section class="special-offers">
+      <p class="special-offers__slogan">Давайте дружить, это выгодно</p>
+      <p class="special-offers__discount">Cкидка 10% для друзей из социальных сетей</p>
+    </section> 
+  </footer>
+<div class="modal-content">
+  <button class="modal-content__close">Закрыть</button>
+  
+    <form class="contact-form" action="/" method="POST">
+      
+      <div class="contact-form__layout  contact-form__layout--left-column">
+        <label for="name">Ваше имя:</label>
+        <input class="contact-form__name" id="name" name="userName" type="text" placeholder="Представьтесь, пожалуйста">
+      </div>
+      
+      <div class="contact-form__layout  contact-form__layout--right-column">
+        <label for="email">Ваш e-mail:</label>
+        <input class="contact-form__email" id="email" name="email" type="text" placeholder="Для отправки ответа">
+      </div>                
+        
+      <label for="textarea">Текст письма:</label>
+      <textarea id="textarea" class="contact-form__textarea" placeholder="В свободной форме"></textarea><br>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+</div> <!-- modal-content -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;  
+ 
+      function init(){     
+        myMap = new ymaps.Map("map", {
+             center: [59.938527, 30.315737],
+             controls: [],
+             zoom: 15,
+
+        });
+
+        myMap.behaviors.disable('scrollZoom');            
+
+        myPlacemark = new ymaps.Placemark([59.938592, 30.323000], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: "/img/myPlacemark.png",
+          iconImageSize: [231, 190],
+          iconImageOffset: [-50, -190]
+        });            
+        myMap.geoObjects.add(myPlacemark);
+        }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
