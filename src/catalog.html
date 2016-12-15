@@ -45,9 +45,9 @@
         <div class="form-filter__range">
           <div class="form-filter__controls">
             <div class="form-filter__scale">
-              <div class="form-filter__bar" style="width: 70%;"></div> 
-              <div class="form-filter__toggle  form-filter__toggle--min"></div>    
-              <div class="form-filter__toggle  form-filter__toggle--max"></div>    
+              <div class="form-filter__bar" style="width: 70%;"></div>
+              <div class="form-filter__toggle  form-filter__toggle--min"></div>
+              <div class="form-filter__toggle  form-filter__toggle--max"></div>
             </div>
           </div>
          <div class="form-filter__price">
@@ -58,7 +58,7 @@
        </fieldset>
 
        <fieldset>
-         <legend class="form-filter__title">Сетка:</legend>   
+         <legend class="form-filter__title">Сетка:</legend>
 
          <input type="radio" id="adaptive" name="type-of-grid" disabled><label class="form-filter__radio" for="adaptive">Адаптивная</label>
          <input type="radio" id="fixed"    name="type-of-grid"><label class="form-filter__radio" for="fixed">Фиксированная</label>
@@ -66,7 +66,7 @@
        </fieldset>
 
        <fieldset>
-         <legend class="form-filter__title">Особенности:</legend>         
+         <legend class="form-filter__title">Особенности:</legend>
          <input type="checkbox" id="filter-slider" name="have-slider"><label for="filter-slider">Слайдер</label>
          <input type="checkbox" id="filter-features" name="have-features"><label for="filter-features">Блок преимуществ</label>
          <input type="checkbox" id="filter-news" name="have-news"><label for="filter-news">Новости</label>
@@ -76,18 +76,34 @@
       <button class="btn" type="submit">Показать</button>
      </form>
   </aside>
-  <div class="content">
-    <div class="sort-filter">
+
+  <div class="catalog-content">
+    <div class="catalog-content__sort">
        <div>Сортировка:</div>
        <ul>
-         <li>По цене</li>
-         <li>По типу</li>
-         <li>По функционалу</li>
+         <li><a href="">По цене</a></li>
+         <li><a href="">По типу</a></li>
+         <li><a href="">По функционалу</a></li>
+      
        </ul>
-       <a href="#" class="sort__upr"></a>
-       <a href="#" class="sort__down"></a>
+       <span class="sort__indicator-up"></span>
+       <span class="sort__indicator-down"></span>
     </div>
     <div class="catalog">
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Aviator</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="product-item__link btn">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/aviator.jpg">  
+      </article>
+
 
        <article class="product-item">
         <div class="product-item__bar">
@@ -98,9 +114,62 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Sunset</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="btn product-item__link">10000 Р.</a>
+          <a href="#" class="product-item__link btn">10000 Р.</a>
         </div>
-        <img class="product-item__image" src="http://placehold.it/340x350">  
+        <img class="product-item__image" src="img/sanset.jpg">  
+      </article>
+
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Forte</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="product-item__link btn">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/forte.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Modern</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="product-item__link btn">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/modern-organic.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Avenue</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="product-item__link btn">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/avenu.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Dovetail</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="product-item__link btn">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/dovetail.jpg">  
       </article>
 
     </div>  
@@ -108,7 +177,7 @@
         <li class="pagination__item">
           <span class="pagination__link-prev  pagination__link--disabled">Предыдущая</span>
         </li>
-        <li class="pagination__item">
+        <li class=" pagination__item">
           <span class="pagination__link  pagination__link--current">1</span>
         </li>
         <li class="pagination__item">
@@ -127,9 +196,8 @@
           <a class="pagination__link-next" href="#">Следующая</a>
         </li>
       </ul>
-   
-  </div>
-  <div class="border-yellow"></div>
+
+  </div>  
 
   </main>
   <div class="map" id="map">
