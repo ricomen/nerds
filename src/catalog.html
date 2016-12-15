@@ -77,17 +77,19 @@
      </form>
   </aside>
 
-  <div class="catalog-content">
-    <div class="catalog-content__sort">
-       <div>Сортировка:</div>
-       <ul>
-         <li><a href="">По цене</a></li>
-         <li><a href="">По типу</a></li>
-         <li><a href="">По функционалу</a></li>
+  <div class="catalog-wrapper">
+    <div class="catalog-sort">
+       <div class="catalog-sort__title">Сортировка:</div>
+       <ul class="catalog-sort__list">
+         <li class="catalog-sort__item"><a class="catalog-sort__link" href="">По цене</a></li>
+         <li class="catalog-sort__item"><a class="catalog-sort__link" href="">По типу</a></li>
+         <li class="catalog-sort__item"><a class="catalog-sort__link" href="">По функционалу</a></li>
       
        </ul>
-       <span class="sort__indicator-up"></span>
-       <span class="sort__indicator-down"></span>
+       <div class="catalog-sort__indicators">
+         <span class="icon  icon-up-dir"></span>
+         <span class="icon  icon-down-dir"></span>
+       </div>
     </div>
     <div class="catalog">
       <article class="product-item">
@@ -177,7 +179,7 @@
         <li class="pagination__item">
           <span class="pagination__link-prev  pagination__link--disabled">Предыдущая</span>
         </li>
-        <li class=" pagination__item">
+        <li class="pagination__item">
           <span class="pagination__link  pagination__link--current">1</span>
         </li>
         <li class="pagination__item">
