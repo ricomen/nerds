@@ -78,15 +78,15 @@
   </aside>
 
   <div class="catalog-wrapper">
-    <div class="catalog-sort">
-       <div class="catalog-sort__title">Сортировка:</div>
-       <ul class="catalog-sort__list">
-         <li class="catalog-sort__item"><a class="catalog-sort__link  catalog-sort__link--active" href="">По цене</a></li>
-         <li class="catalog-sort__item"><a class="catalog-sort__link" href="">По типу</a></li>
-         <li class="catalog-sort__item"><a class="catalog-sort__link" href="">По функционалу</a></li>
+    <div class="ordering">
+       <div class="ordering__title">Сортировка:</div>
+       <ul class="ordering__list">
+         <li class="ordering__item"><a class="ordering__link  ordering__link--active" href="">По цене</a></li>
+         <li class="ordering__item"><a class="ordering__link" href="">По типу</a></li>
+         <li class="ordering__item"><a class="ordering__link" href="">По функционалу</a></li>
       
        </ul>
-       <div class="catalog-sort__indicators">
+       <div class="ordering__indicators">
          <span class="icon-up-dir"></span>
          <span class="icon-down-dir active"></span>
        </div>
@@ -101,7 +101,7 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Aviator</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="product-item__link btn">10000 Р.</a>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
         </div>
         <img class="product-item__image" src="img/aviator.jpg">  
       </article>
@@ -116,7 +116,7 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Sunset</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="product-item__link btn">10000 Р.</a>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
         </div>
         <img class="product-item__image" src="img/sanset.jpg">  
       </article>
@@ -130,7 +130,7 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Forte</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="product-item__link btn">10000 Р.</a>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
         </div>
         <img class="product-item__image" src="img/forte.jpg">  
       </article>
@@ -143,7 +143,7 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Modern</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="product-item__link btn">10000 Р.</a>
+          <a href="#" class="btn btn--buy">10000 Р.</a>
         </div>
         <img class="product-item__image" src="img/modern-organic.jpg">  
       </article>
@@ -156,7 +156,7 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Avenue</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="product-item__link btn">10000 Р.</a>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
         </div>
         <img class="product-item__image" src="img/avenu.jpg">  
       </article>
@@ -169,33 +169,33 @@
         <div class="product-item__description">
           <h3 class="product-item__title">Dovetail</h3>
           <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
-          <a href="#" class="product-item__link btn">10000 Р.</a>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
         </div>
         <img class="product-item__image" src="img/dovetail.jpg">  
       </article>
 
     </div>  
-        <ul class="pagination">
-        <li class="pagination__item">
-          <span class="pagination__link-prev  pagination__link--disabled">Предыдущая</span>
+      <ul class="pagination">
+        <li class="pagination__item  pagination__item--hidden">
+          <a href="#"">Предыдущая</a>
+        </li>
+        <li class="pagination__item pagination__item--active">
+          <span>1</span>
         </li>
         <li class="pagination__item">
-          <span class="pagination__link  pagination__link--current">1</span>
+          <a href="#">2</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link" href="#">2</a>
+          <a href="#">3</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link" href="#">3</a>
+          <a href="#">4</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link" href="#">4</a>
+          <a href="#">5</a>
         </li>
         <li class="pagination__item">
-          <a class="pagination__link" href="#">5</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link-next" href="#">Следующая</a>
+          <a href="#">Следующая</a>
         </li>
       </ul>
 
