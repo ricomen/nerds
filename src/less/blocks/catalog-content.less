@@ -1,3 +1,14 @@
+.catalog-title {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 45px 100px;
+}
+
 .catalog-wrapper {
   float: right;
   width: 560px;
@@ -29,22 +40,35 @@
     float: left;  
     margin-right: 45px;
     padding: 0;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 18px;    
+    font-weight: 500;
+    text-transform: uppercase;
     &:last-child {
       margin-right: 0;
     }
   }
   &__link {
-    display: block;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 500;
+    display: block;     
     color: #b2b2b2;
     text-decoration: none;
     border-bottom: 1px dotted #00ca74;
     text-transform: uppercase;
+    &:hover {
+      color: #000;
+      border-bottom: 1px solid #00ca74;
+    }
+    &:active,
+    &--active {
+      color: #000;
+      border: none;
+    }  
   }
   &__indicators {
-    float: right;    
+    float: right;
+    color: #c1c1c1;
+    .active {
+      color: #00ca74;
+    }
   }
 }
