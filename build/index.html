@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=960"> 
     <title>Nerd's</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,00i,500,500i&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
@@ -30,7 +30,6 @@
           <a href="#" class="cart__link cart__link--current"><span class="icon-basket"></span> Корзина</a>
         </div> <!-- cart end -->
       </div> <!-- page-header__top end -->
-
 <div class="slider">
     <div class="slider__controls">
       <i class="slider__controls-item  slider__controls-item--active"></i>
@@ -62,14 +61,10 @@
       </div> <!-- slide -->
     </div> <!-- slides -->
   </div>
-
     </div> <!-- container end -->
    </header>
-
   <main class="container">
-    
-      <div class="features">
-
+          <div class="features">
         <div class="features__item">
           <div class="features__image">
             <img src="img/web.jpg" alt="Веб-сайты">
@@ -77,10 +72,7 @@
           <h2 class="features__item-title">Веб-сайты</h2>
           <p class="features__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a href="#" class="btn  btn--red">Заказать</a>
-
-
         </div> <!-- features__item -->
-
         <div class="features__item">
           <div class="features__image">
             <img src="img/mobile-application.jpg" alt="">
@@ -88,9 +80,7 @@
           <h2 class="features__item-title">Приложения</h2>
           <p class="features__text">Покорите топ-10 приложений в AppStore и  Google Play</p>
           <a href="#" class="btn  btn--green">Заказать</a>
-
         </div> <!-- features__item -->
-
         <div class="features__item">
           <div class="features__image">
             <img src="img/presentation.jpg" alt="">
@@ -98,34 +88,24 @@
           <h2 class="features__item-title">Презентации</h2>
           <p class="features__text">Вы Даже не подозреваете, насколько вы изумительны</p>
           <a href="#" class="btn  btn--yellow">Заказать</a>
-
         </div> <!-- features__item -->
       </div> <!-- features -->
-
       <div class="about">
 
         <div class="about__content">
-
           <div class="about__left-column">
-
             <p class="about__promo-text">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-
           </div> <!-- left-column -->
-
           <div class="about__right-column about__right-column--center">
-
             <div class="about__logo">
               <img src="img/about-logo.png" width="187" height="75" alt="Nerd`s" class="about__logo-image">
             </div>
             <h3 class="about__logo-text">Since 2004</h3>
           </div>
-
-      </div> 
-      
+      </div>       
       <div class="about__content">
-        <div class="about__left-column">
-      
+        <div class="about__left-column">      
         <h2 class="about__title">Выполняем заказы на разработку:</h2>
         <ul class="custom-list">
           <li class="custom-list__item">Веб-сайтов любой сложности</li>
@@ -174,7 +154,6 @@
       </div>
     </div>
   </div>
-
   <footer class="page-footer container">
     <section class="social">
       <a href="http://www.vk.com" class="social__btn"><i class="icon-vk"></i></a>
@@ -187,20 +166,16 @@
     </section> 
   </footer>
 <div class="modal-content">
-  <button class="modal-content__close">Закрыть</button>
-  
-    <form class="contact-form" action="/" method="POST">
-      
+  <button class="modal-content__close">Закрыть</button>  
+    <form class="contact-form" action="/" method="POST">      
       <div class="contact-form__layout  contact-form__layout--left-column">
         <label for="name">Ваше имя:</label>
         <input class="contact-form__name" id="name" name="userName" type="text" placeholder="Представьтесь, пожалуйста">
-      </div>
-      
+      </div>      
       <div class="contact-form__layout  contact-form__layout--right-column">
         <label for="email">Ваш e-mail:</label>
         <input class="contact-form__email" id="email" name="email" type="text" placeholder="Для отправки ответа">
-      </div>                
-        
+      </div>
       <label for="textarea">Текст письма:</label>
       <textarea id="textarea" class="contact-form__textarea" placeholder="В свободной форме"></textarea><br>
       <button class="btn" type="submit">Отправить</button>
@@ -211,17 +186,13 @@
     ymaps.ready(init);
       var myMap,
           myPlacemark;  
- 
-      function init(){     
+       function init(){     
         myMap = new ymaps.Map("map", {
              center: [59.938527, 30.315737],
              controls: [],
              zoom: 15,
-
         });
-
-        myMap.behaviors.disable('scrollZoom');            
-
+        myMap.behaviors.disable('scrollZoom');
         myPlacemark = new ymaps.Placemark([59.938592, 30.323000], {}, {
           iconLayout: 'default#image',
           iconImageHref: "/img/myPlacemark.png",

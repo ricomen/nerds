@@ -284,14 +284,14 @@
 //Добаляем шрифты
 .add-font(@font-url, @font-name, @font-weight: normal, @font-style: normal) {
   font-family: @font-name;
-  src: url('@{font-folder}@{font-url}.eot'); // IE9 Compat Modes 
-  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'), // IE6-IE8 
-  url('@{font-folder}@{font-url}.woff') format('woff'), // Pretty Modern Browsers 
-  url('@{font-folder}@{font-url}.ttf') format('truetype'), // Safari, Android, iOS 
-  url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); // Legacy iOS  
+  src: url('@{font-folder}@{font-url}.eot');
+  src: url('@{font-folder}@{font-url}.eot?#iefix') format('embedded-opentype'),
+  url('@{font-folder}@{font-url}.woff') format('woff'),
+  url('@{font-folder}@{font-url}.ttf') format('truetype');
   font-weight: @font-weight;
   font-style: @font-style;
 }
+/*   url('@{font-folder}@{font-url}.svg#@{font-name}') format('svg'); */
 //Helpers blocks
 .border-red() {
   background: rgba(150, 0, 0, 0.5); //red

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=960"> 
+    <title>Nerd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,00i,500,500i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="img/logo.png" alt="Nerd's" width="139" height="56" class="logo__img">
+          </a>        
+        </div> <!-- logo end -->
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link  main-nav__link--current">Студия</a>
+            </li>
+             <li class="main-nav__item"><a href="#" class="main-nav__link">Клиенты</a></li>
+             <li class="main-nav__item"><a href="#" class="main-nav__link">Магазин</a></li>
+             <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav> <!-- nav end -->
+        <div class="cart">          
+          <a href="#" class="cart__link cart__link--current"><span class="icon-basket"></span> Корзина</a>
+        </div> <!-- cart end -->
+      </div> <!-- page-header__top end -->
+      <h1 class="catalog-title">Добро пожаловать в магазин готовых макетов</h1>
+    </div> <!-- container end -->
+   </header>
+  <main class="container">
+  <aside class="sidebar">
+     <form class="form-filter" action="/" method="GET">
+       <fieldset>
+        <legend class="form-filter__title">Стоимость:</legend>
+        <div class="form-filter__range">
+          <div class="form-filter__controls">
+            <div class="form-filter__scale">
+              <div class="form-filter__bar" style="width: 70%;"></div>
+              <div class="form-filter__toggle  form-filter__toggle--min"></div>
+              <div class="form-filter__toggle  form-filter__toggle--max"></div>
+            </div>
+          </div>
+         <div class="form-filter__price">
+         От<input class="form-filter__price-min" type="text" value="0">До<input class="form-filter__price-max"  type="text" value="15000">
+         </div>
+        </div>
+       </fieldset>
+       <fieldset>
+         <legend class="form-filter__title">Сетка:</legend>
+         <input type="radio" id="adaptive" name="type-of-grid" disabled><label class="form-filter__radio" for="adaptive">Адаптивная</label>
+         <input type="radio" id="fixed"    name="type-of-grid"><label class="form-filter__radio" for="fixed">Фиксированная</label>
+         <input type="radio" id="flexible" name="type-of-grid"><label class="form-filter__radio" for="flexible">Резиновая</label>
+       </fieldset>
+       <fieldset>
+         <legend class="form-filter__title">Особенности:</legend>
+         <input type="checkbox" id="filter-slider" name="have-slider"><label for="filter-slider">Слайдер</label>
+         <input type="checkbox" id="filter-features" name="have-features"><label for="filter-features">Блок преимуществ</label>
+         <input type="checkbox" id="filter-news" name="have-news"><label for="filter-news">Новости</label>
+         <input type="checkbox" id="filter-gallery" name="have-gallery"><label for="filter-gallery">Галлерея</label>
+         <input type="checkbox" id="filter-cart" name="have-cart"><label for="filter-cart">Корзина</label>
+       </fieldset>
+      <button class="btn" type="submit">Показать</button>
+     </form>
+  </aside>
+  <div class="catalog-wrapper">
+    <div class="ordering">
+       <div class="ordering__title">Сортировка:</div>
+       <ul class="ordering__list">
+         <li class="ordering__item"><a class="ordering__link  ordering__link--active" href="">По цене</a></li>
+         <li class="ordering__item"><a class="ordering__link" href="">По типу</a></li>
+         <li class="ordering__item"><a class="ordering__link" href="">По функционалу</a></li>
+       </ul>
+       <div class="ordering__indicators">
+         <span class="icon-up-dir"></span>
+         <span class="icon-down-dir active"></span>
+       </div>
+    </div>
+    <div class="catalog">
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Aviator</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/aviator.jpg">  
+      </article>
+       <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Sunset</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/sanset.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Forte</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/forte.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Modern</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="btn btn--buy">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/modern-organic.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Avenue</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/avenu.jpg">  
+      </article>
+      <article class="product-item">
+        <div class="product-item__bar">
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+          <span class="product-item__decor"></span>
+        </div>
+        <div class="product-item__description">
+          <h3 class="product-item__title">Dovetail</h3>
+          <p class="product-item__description-text">Интернет магазин с личным кабинетом</p>
+          <a href="#" class="btn  btn--buy">10000 Р.</a>
+        </div>
+        <img class="product-item__image" src="img/dovetail.jpg">  
+      </article>
+    </div>  
+      <ul class="pagination">
+        <li class="pagination__item  pagination__item--hidden">
+          <a href="#"">Предыдущая</a>
+        </li>
+        <li class="pagination__item pagination__item--active">
+          <span>1</span>
+        </li>
+        <li class="pagination__item">
+          <a href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#">4</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#">5</a>
+        </li>
+        <li class="pagination__item">
+          <a href="#">Следующая</a>
+        </li>
+      </ul>
+  </div>  
+  </main>
+  <div class="map" id="map">
+    <div class="container">
+      <div class="contact">
+      <h2 class="contact__title">NЁRDS DESIGN STUDIO</h2>
+      <address class="contact__adress">191186, Санкт-Петербург,
+      ул. Б. Конюшенная, д. 19/8
+      тел.</address>
+      <a href="tel:+78122757575" class="contact__phone-number">+7 (812) 275-75-75</a>
+      <a href="mailto:ricomen@mail.ru" class="btn contact__link">Напишите нам</a>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer container">
+    <section class="social">
+      <a href="http://www.vk.com" class="social__btn"><i class="icon-vk"></i></a>
+      <a href="http://www.facebook.com" class="social__btn"><i class="icon-facebook"></i></a>
+      <a href="http://www.instagram.com" class="social__btn"><i class="icon-instagramm"></i></a>
+    </section>
+    <section class="special-offers">
+      <p class="special-offers__slogan">Давайте дружить, это выгодно</p>
+      <p class="special-offers__discount">Cкидка 10% для друзей из социальных сетей</p>
+    </section> 
+  </footer>
+<div class="modal-content">
+  <button class="modal-content__close">Закрыть</button>
+      <form class="contact-form" action="/" method="POST">
+        <div class="contact-form__layout  contact-form__layout--left-column">
+          <label for="name">Ваше имя:</label>
+          <input class="contact-form__name" id="name" name="userName" type="text" placeholder="Представьтесь, пожалуйста">
+        </div>      
+        <div class="contact-form__layout  contact-form__layout--right-column">
+          <label for="email">Ваш e-mail:</label>
+          <input class="contact-form__email" id="email" name="email" type="text" placeholder="Для отправки ответа">
+        </div>
+      <label for="textarea">Текст письма:</label>
+      <textarea id="textarea" class="contact-form__textarea" placeholder="В свободной форме"></textarea><br>
+      <button class="btn" type="submit">Отправить</button>
+    </form>
+</div> <!-- modal-content -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script>
+    ymaps.ready(init);
+      var myMap,
+          myPlacemark;
+      function init(){
+        myMap = new ymaps.Map("map", {
+             center: [59.938527, 30.315737],
+             controls: [],
+             zoom: 15,
+        });
+        myMap.behaviors.disable('scrollZoom');
+        myPlacemark = new ymaps.Placemark([59.938592, 30.323000], {}, {
+          iconLayout: 'default#image',
+          iconImageHref: "/img/myPlacemark.png",
+          iconImageSize: [231, 190],
+          iconImageOffset: [-50, -190]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
